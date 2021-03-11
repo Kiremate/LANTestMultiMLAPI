@@ -267,11 +267,11 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="MLAPI">
-      <HintPath>D:/Mis Documentos/MEGA/MEGAsync/Unity Workspace/LANTestMultiMLAPI/Assets/MLAPI/Lib/MLAPI.dll</HintPath>
-    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="MLAPI">
+      <HintPath>D:/Mis Documentos/MEGA/MEGAsync/Unity Workspace/LANTestMultiMLAPI/Assets/MLAPI/Lib/MLAPI.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Mis Documentos/MEGA/MEGAsync/Unity Workspace/LANTestMultiMLAPI/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -668,6 +668,10 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{7D3D0256-0092-B342-1E31-09656A33689C}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{B22B14C9-9172-3CBA-8FB6-167C327EEA3D}</Project>
+      <Name>ParrelSync</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -64,8 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ParrelSync\Examples\CustomArgumentExample.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <None Include="Assets\MLAPI\Lib\MLAPI.xml" />
+    <None Include="Assets\ParrelSync\VERSION.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -625,7 +627,12 @@
       <HintPath>D:/Mis Documentos/MEGA/MEGAsync/Unity Workspace/LANTestMultiMLAPI/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{B22B14C9-9172-3CBA-8FB6-167C327EEA3D}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
