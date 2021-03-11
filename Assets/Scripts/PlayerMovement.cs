@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAPI;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkedBehaviour
 {
     [SerializeField]
     private float PlayerSpeed = 5f;
@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
+        if(IsLocalPlayer)
+            MovePlayer();
     }
 
     void MovePlayer(){
