@@ -26,9 +26,8 @@ public class MenuController : MonoBehaviour
         // The prefab hash. Use null to use the default player prefab
         // If using this hash, replace "MyPrefabHashGenerator" with the name of a prefab added to the NetworkedPrefabs field of your NetworkingManager object in the scene
        
-       ulong? prefabHash = SpawnManager.GetPrefabHashFromGenerator("Player");
+       ulong? prefabHash = SpawnManager.GetPrefabHashFromGenerator("Player2");
 
-        Debug.Log("ENTRO");
         //If approve is true, the connection gets added. If it's false. The client gets disconnected
         callback(createPlayerObject, prefabHash, approve, spawnInitPosition, Quaternion.identity);
     }
@@ -38,13 +37,13 @@ public class MenuController : MonoBehaviour
     {
         Debug.Log("Current IP adress: " + currentIP);
         Debug.Log("Current Port: " + currentPort);
-        //NetworkingManager.Singleton.ConnectionApprovalCallback += ApprovalHostCheck;
+        NetworkingManager.Singleton.ConnectionApprovalCallback += ApprovalHostCheck;
 
         NetworkingManager.Singleton.GetComponent<UnetTransport>().ConnectAddress = currentIP;
         NetworkingManager.Singleton.GetComponent<UnetTransport>().ConnectPort = currentPort;
 
 
-        NetworkingManager.Singleton.StartHost();
+        NetworkingManager.Singleton.StartHost(spawnInitPosition, Quaternion.identity, true, null, null);
        
 
         menuPanel.SetActive(false);

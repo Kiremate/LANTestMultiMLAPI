@@ -1677,13 +1677,13 @@ MonoBehaviour:
       PlayerPrefab: 0
     PlayerPrefabHash:
       Value: 1897319656204293034
-    CreatePlayerPrefab: 1
+    CreatePlayerPrefab: 0
     ReceiveTickrate: 64
     MaxReceiveEventsPerTickRate: 500
     EventTickrate: 64
     MaxObjectUpdatesPerTick: -1
     ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
+    ConnectionApproval: 1
     ConnectionData: 
     SecondsHistory: 5
     EnableTimeResync: 0
@@ -1691,7 +1691,7 @@ MonoBehaviour:
     EnableNetworkedVar: 1
     EnsureNetworkedVarLengthSafety: 0
     EnableSceneManagement: 1
-    ForceSamePrefabs: 1
+    ForceSamePrefabs: 0
     UsePrefabSync: 0
     RecycleNetworkIds: 1
     NetworkIdRecycleDelay: 120
